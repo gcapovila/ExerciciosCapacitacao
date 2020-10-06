@@ -4,11 +4,13 @@ public class OvoDePeixe extends Animal{
 	
 	private String formato;
 	
+	// herança e abstração
 	public OvoDePeixe(String classificacao, String cor, Integer quantidadeDeMembros, String formato) {
 		super(classificacao, cor, quantidadeDeMembros);
 		this.formato = formato;
 	}
 
+	// polimorfismo de sobrecarga (sobrescrita de método)
 	@Override
 	public void locomover() {
 		System.out.println("Não se mexe");
@@ -24,6 +26,7 @@ public class OvoDePeixe extends Animal{
 		System.out.println("Não interage");
 	}
 
+	// encapsulamento
 	public String getFormato() {
 		return formato;
 	}

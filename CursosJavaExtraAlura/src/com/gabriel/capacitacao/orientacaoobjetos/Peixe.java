@@ -13,7 +13,7 @@ public class Peixe extends Animal {
 		this.peixeDeAguaSalgada = peixeDeAguaSalgada;
 	}
 
-	// polimorfismo de sobrecarga
+	// polimorfismo de sobrecarga (sobrescrita de método)
 	@Override
 	public void locomover() {
 		System.out.println("Nadando");		
@@ -45,6 +45,7 @@ public class Peixe extends Animal {
 		}
 	}
 
+	// encapsulamento
 	public Boolean getPeixeDeAguaSalgada() {
 		return peixeDeAguaSalgada;
 	}
