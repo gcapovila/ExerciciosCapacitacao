@@ -1,7 +1,5 @@
 package com.gabriel.devdojo.introducao;
 
-import java.util.ArrayList;
-
 public class Varargs {
 	
 	public static void main(String[] args) {

@@ -10,7 +10,7 @@ public class OvoDePeixe extends Animal{
 		this.formato = formato;
 	}
 
-	// polimorfismo de sobrecarga (sobrescrita de método)
+	// sobrecarga (sobrescrita de método)
 	@Override
 	public void locomover() {
 		System.out.println("Não se mexe");
