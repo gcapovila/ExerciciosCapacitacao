@@ -35,7 +35,8 @@ public class Montador {
 		this.quantidadeDeMesasMontadas = quantidadeDeMesasMontadas;
 	}
 	public static void setTotalDeMontadores(int totalDeMontadores) {
-		Montador.totalDeMontadores = totalDeMontadores;
+		Montador.totalDeMontadores = totalDeMontadores; /* quando um método é estático, não pode tem this. dentro dele
+		 												 * em vez disso, usamos NomeDaClasse. no lugar*/
 	}
 	public static int getTotalDeMontadores() {
 		return totalDeMontadores;

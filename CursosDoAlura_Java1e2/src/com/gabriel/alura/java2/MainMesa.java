@@ -39,7 +39,8 @@ public class MainMesa {
 		
 		Montador montador2 = new Montador("Mariana");
 		System.out.println("");
-		System.out.println("Total de montadores: " + Montador.getTotalDeMontadores());
+		System.out.println("Total de montadores: " + Montador.getTotalDeMontadores()); /* na hora de chamar um método estático, 
+		 															     usamos o nome da classe e não uma instãncia de objeto */
 		
 	}
 

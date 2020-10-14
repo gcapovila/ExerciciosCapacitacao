@@ -27,7 +27,7 @@ public class Mesa {
 	public void setQuantidadeDePes(int quantidadeDePes) {
 		if (quantidadeDePes < 2){
 			System.out.println("Quantidade de pés inválida");
-			return; // para sair do método sem ler o resto (equivalente ao break quando tem um loo; o return sai do método)
+			return; // para sair do método sem ler o resto (equivalente ao break quando tem um loop; o return sai do método)
 		}
 		this.quantidadeDePes = quantidadeDePes;
 	}
