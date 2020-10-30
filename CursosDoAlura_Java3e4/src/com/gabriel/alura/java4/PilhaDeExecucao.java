@@ -25,7 +25,7 @@ public class PilhaDeExecucao {
         
         try {
         	
-			//int a = 6 / 0; // vai dar ArithmeticException
+			int a = 6 / 0; // vai dar ArithmeticException
 			Gerente gerente = null;
 			gerente.aumentaSalario(); // vai dar NullPointer
 			

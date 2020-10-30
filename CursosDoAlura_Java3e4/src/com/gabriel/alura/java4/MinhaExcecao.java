@@ -9,7 +9,7 @@ public class MinhaExcecao extends Exception { /* Se o tipo da exceção for Runtim
  											   * método precisa de um try catch para tratar a exceção)
  											   * 
  											   * Já quando se extende RuntimeException, estamos praticando um tipo de exceção
- 											   * chamado Unhecked (não verificado pelo compilador) - por isso não usa throws */
+ 											   * chamado Unchecked (não verificado pelo compilador) - por isso não usa throws */
 	
 	// Precisa do construtor se eu quiser que minha exceção receba uma mensagem
 	

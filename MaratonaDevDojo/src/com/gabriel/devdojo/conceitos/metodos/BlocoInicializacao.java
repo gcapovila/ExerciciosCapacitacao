@@ -1,6 +1,6 @@
 package com.gabriel.devdojo.conceitos.metodos;
 
-public class BlocoInicializacao {
+public class BlocoInicializacao extends BlocoInicializacaoMaeComConstantes {
 	
 	// Antes de chamar o construtor, sempre que um objeto é instanciado, é chamado o bloco de inicialização
 	
@@ -12,7 +12,6 @@ public class BlocoInicializacao {
 	 * E por último chama o construtor */
 	
 	{
-		System.out.println("------------------");
 		System.out.println("Dentro do bloco de inicialização de um objeto");
 		
 		for (int i = 0; i < 5; i++){
@@ -25,6 +24,7 @@ public class BlocoInicializacao {
 		
 		// Outra coisa, mesmo eu só declarando int contador ali embaixo, a declaração é chamada antes do bloco de inicialização
 		System.out.println("Contador = " + contador);
+		System.out.println("---------");
 	}	
 	
 	// Variável para testes. Ela é estática, ou seja, da classe e não de cada objeto
@@ -32,13 +32,13 @@ public class BlocoInicializacao {
 	
 	// Construtor da classe será chamado depois do bloco de inicialização, mesmo que no código esteja antes
 	public BlocoInicializacao(){
-		System.out.println("------------------");
 		System.out.println("Dentro do construtor do objeto " + contador);
 		System.out.println("Imprimindo parcelas");
 		for(int parcela : parcelas){
 			System.out.print(parcela + " ");
 		}
 		System.out.println(" ");
+		System.out.println("--------------------");
 	}
 	
 	/* Caso haja um bloco de inicialização estático, este será executado ainda antes do bloco de inicialização normal
@@ -52,6 +52,7 @@ public class BlocoInicializacao {
 	// Se tem mais de um bloco de inicialização, eles são executados na ordem que são apresentados no código
 	static {
 		System.out.println("Bloco de inicialização estático 2");
+		System.out.println("------------------");
 	}
 
 }
