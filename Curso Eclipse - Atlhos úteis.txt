@@ -1,0 +1,25 @@
+
+ATALHOS ÚTEIS ECLIPSE:
+
+- Ctrl M maximiza a aba atual | ctrl N = new | ctrl pg up e pg down: alternar entre abas
+- Ctrl 1: clicar na lâmpda ou opções da palavra selecionada | Ctrl 7: toggle comment
+- CTRL 3: CHAMAR MENU ou ação (digitar GG por ex chama gerar getters e setters, equals chama gerar equals e hash code, constructor gerar constr.)
+- Ctrl F3 --> equivale ao ctrl clique | Ctrl F11 --> run java application
+- Alt shift S --> source | ctrl shift o: organizar imports | ctr shift f: formatar e identar | ctrl I: somente identar
+
+- alt + shift + T : mostrar o menu REFACTOR
+- alt + shift + A : seleção em bloco (escrever a mesma coisa em várias linhas ao mesmo tempo)
+- alt + shift + R : refactor, rename
+- ctrl + alt + seta pra baixo: copiar linha atual para baixo (o mesmo pra cima)
+- alt + seta pra baixo/cima: mover linha atual para baixo/cima
+- ctrl + ponto: ir até o próximo erro
+- transformar um bloco de texto em um método (refactor; extract method) : alt shift M
+
+- ctrl shift R = resourses (buscar arquivo pelo nome) | ctrl shift T = types (busca por uma classe, interface ou enum)
+- ctrl shift G = find usages (mostra onde uma classe ou método é utilizada) | ctrl alt H é mesma coisa porém mostra a hierarquia dos métodos
+- ctrl o = navegar por itens de uma classe (mpetodos, objetos, variáveis, etc) | ctrl H é um ctrl F que varre todos os arquivos
+- ctrl T mostra todas as subclasses de uma classe, seja normal ou abstrata; mostra tbm todas as classes que sobrescrevem um método
+- alt + seta direita/esquerda : voltar/avançar igual no navegador | ctrl shit w fecha todas as abas
+- EXEBIR HISTÓRICO DE ALTERAÇÕES NUMA CLASSE!!! Além do ctrl z!!! --> botão direito na classe, compare with, local history
+
+- ctr shift B insere breakpoint | alt shift D e depois T para iniciar debug | ctrl F2 sai do debug | ctrl F8 volta para a perspectiva Java

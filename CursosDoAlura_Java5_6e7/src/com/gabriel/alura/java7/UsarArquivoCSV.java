@@ -37,8 +37,17 @@ public class UsarArquivoCSV {
             String valor4 = linhaScanner.next();
             double valor5 = linhaScanner.nextDouble(); // Recebe um double
 
+            	// Exibindo no console (de forma concatenada)
             System.out.println(valor1 + " | " + valor2 + " | " + valor3 + " | " + valor4 + " | " + valor5);
+            
+            	// Exibindo no console (de forma otimizada)
+            String valorFormatado = String.format(
+            		Locale.US, // Locale.US força a usar ponto e não vírgula para casas decimais
+            		//new Locale("pt","BR"), // Criar um novo locale, pt BR, força a usar vírgula e não pontos para casas decimais
+            		"%s | %d | %d | %s | %.2f", valor1, valor2, valor3, valor4, valor5); //Construtor recebe locale e depois strings
+            System.out.println(valorFormatado);
 
+            // Fechando o novo scanner
             linhaScanner.close();
 			
 		}
