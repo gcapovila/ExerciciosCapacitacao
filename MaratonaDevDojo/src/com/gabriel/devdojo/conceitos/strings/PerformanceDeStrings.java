@@ -1,6 +1,6 @@
 package com.gabriel.devdojo.conceitos.strings;
 
-public class StringPerformanceTest {
+public class PerformanceDeStrings {
 	
     public static void main(String[] args) {
     	

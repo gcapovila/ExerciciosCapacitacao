@@ -1,9 +1,9 @@
 package com.gabriel.devdojo.conceitos.strings;
 
 /**
- * Created by William Suane on 6/29/2016.
+ * MAIS INFORMAÇÕES, VER AULAS 80 E 81 DA MARATONA JAVA DO DEV DOJO
  */
-public class StringTest {
+public class PrincipiosDeString {
     public static void main(String[] args) {
         String nome = "William";
         nome = nome.concat(" Suane"); // nome += " Suane";
