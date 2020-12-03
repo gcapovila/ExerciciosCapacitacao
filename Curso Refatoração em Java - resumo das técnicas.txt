@@ -1,0 +1,22 @@
+
+- Extrair método: pegar um bloco extenso de código (ou um bloco que se repita em vários trechos) e transformar em um método (oposto da técnica abaixo)
+
+- Internalizar método: pegar um método que chame outro método privado (ou um método que é usado apenas uma vez) e tirar o código do método, eliminando-o
+
+- Internalizar variável temporária: quando uma variável só é usada para ser passada em um método, podemos passar p ele direto o conteúdo da variável
+
+- Introduzir Variável Explicativa: criar variável temporária para especificar um trecho melhor (oposto da técnica acima)
+
+- Remover atribuição a parâmetro: quando parâmetro é modificado muitas vezes em uma classe, criar variável temporária que recebe ele (evitando uso dele)
+
+- Substituir algorítmo: reduzir o tamanha de uma lógica
+
+- Mover método: tirar de uma classe e passar para uma que faça mais sentido, talvez até modificando a lógica (exemplo: reduzindo quantidade de ifs)
+
+- Extrair classe: quando tem repetição de código ou métodos entre classes, pode ser interessante criar uma classe nova (Factory por exemplo), que
+	irá concentrar todos esses métodos (oposto da técnica abaixo)
+
+- Internalizar classe: quando tem uma classe usada uma única vez no código inteiro, pode ser interessante mover seu código para a classe que a chama
+
+- Ocultar delegação: quando uma classe chama um método que chama outro método, podemos fazer um "atalho". Exemplo: carrinho.getLivros().adiciona()
+	podemos criar um método adiciona na classe Carrinho, evitando usar o getLivros: carrinho.adiciona() --> vai chamar o outro adiciona
