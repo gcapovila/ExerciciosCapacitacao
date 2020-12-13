@@ -1,0 +1,35 @@
+
+<meta charset="UTF-8">
+
+<input/> <!-- Um input é uma caixa de texto neste caso -->
+<button>Compare com o meu segredo</button> <!-- Definindo um botão e o "nome" que aparece nele -->
+
+<script>
+
+    var segredo = 5;
+	//var segredo = Math.round(Math.random() * 10); // Se eu quiser atribuir um valor randômico de 1 a 10 à minha variável segredo
+	//var segredos = [5,7,10,2]; // Ou var segredos = [] --> Declaração de vetor em javascript -- para adicionar é .push("valor") e para saber o tamanho é .length
+
+    var meuTexto = document.querySelector("input"); // querySelector busca um elemento no html pelo nome da tag, passado nos parêntesis (no caso tag input)
+	meuTexto.focus(); // Joga o foco no campo meuTexto
+
+    function verifica() {
+
+        if(meuTexto.value == segredo) {
+
+        alert("Você ACERTOU!");
+        } else {
+
+        alert("Você ERROU!!!!!!!!");
+        }
+		
+		meuTexto.value = ""; // Limpa o campo meuTexto
+        meuTexto.focus(); // Joga o foco no campo meuTexto
+
+    }
+
+    var meuBotao = document.querySelector("button"); // querySelector busca um elemento no html pelo nome da tag, passado nos parêntesis (no caso tag button)
+
+    meuBotao.onclick = verifica; // Assim, está atribuindo a função "verifica" ao evento "onclick" do meu botão. Não pode por () porque senão vai chamar a função ao carregar a página, e não atribuí-la ao botão
+
+</script>

@@ -1,0 +1,30 @@
+
+<meta charset="UTF-8"> <!-- para permitir acentos -->
+
+<h1>Meu primeiro teste!</h1> <!-- h1 é header -->
+<br> <!-- br pula uma linha -->
+Seria isso um programa? <a href="http://www.alura.com.br">Link para o Alura</a>
+
+<!-- tag script indica que tem um código aqui, e o comando abaixo em javascript exibe um pop-up na tela -->
+<script>
+
+	var teste = 12; // Declarando variável (não é tipado)
+
+    alert("Isso sim é um programa");
+	document.write("<br><br>"); // Comando para fazer o script escrever algo na página
+	document.write("A idade é: " + ((teste * 2)+1)); // Se não puser parentesis antes do + ele entende como concatenação
+	showWelcome("Gabriel");
+	//document.write(showWelcome("Gabriel"));
+	
+	// !!! A sintaxe de: if, while, for .... em javascript é igual em java normal (só muda que dentro do for, pra declarar a variável é var) !!!
+	// E para sair de um loop, também igual o java, é o comando break;
+	
+	function showWelcome(name){ // Métodos/funções em javascript -- pode ou não retornar valor
+	
+		document.write("<br><br>Bem-vindo(a) " + name);
+		//return "<br><br>Bem-vindo(a) " + name
+		//return parseInt("1997"); // parseInt converte texto para número
+	
+	}
+	
+</script>
